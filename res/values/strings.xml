@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Viewitt</string>
+    <string name="title_activity_main">Viewitt</string>
+    
+    <string-array name="drawerOptions">
+        <item>Share</item>
+        <item>Save</item>
+        <item>Popular</item>
+        <item>Custom</item>
+        <item>Settings</item>
+    </string-array>
+
+</resources>
