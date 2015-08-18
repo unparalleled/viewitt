@@ -171,7 +171,7 @@ public class MainActivity extends Activity {
 		@Override
 		public Object instantiateItem(ViewGroup container, int position) {
 			final MediaLink mediaLink = media.get(position);
-			String url = mediaLink.getMediaUrl();
+			final String url = mediaLink.getMediaUrl();
 
 			RelativeLayout layout = (RelativeLayout) singleton.getLayoutInflater().inflate(R.layout.layout_media, container, false);
 			ImageView imageView = (ImageView) layout.findViewById(R.id.imageView);
@@ -189,10 +189,15 @@ public class MainActivity extends Activity {
 				videoView.setOnPreparedListener(new OnPreparedListener() {
 					@Override
 					public void onPrepared(MediaPlayer mp) {
-						mp.setLooping(true);
+						// mp.setLooping(true);
 					}
 				});
-				// videoView.setMediaController(new MediaController(singleton));
+				videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+					@Override
+					public void onCompletion(MediaPlayer mp) {
+						mp.start();
+					}
+				});
 			} else {
 				clickable = imageView;
 				imageView.setVisibility(View.VISIBLE);
@@ -243,8 +248,9 @@ public class MainActivity extends Activity {
 				ThisApp.incrementUniqueImageViews();
 				lastPosition = position;
 			}
-			if (ThisApp.getShowTitle())
+			if (ThisApp.getShowTitle()) {
 				toast(currentMedia.getMediaTitle());
+			}
 		}
 	}
 
