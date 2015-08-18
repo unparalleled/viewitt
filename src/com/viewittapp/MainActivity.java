@@ -47,7 +47,7 @@ import android.widget.VideoView;
 public class MainActivity extends Activity {
 
 	private static final String TAG = MainActivity.class.getSimpleName();
-	private static final String REDDIT_URL = "http://www.reddit.com/";
+	private static final String REDDIT_URL = "https://www.reddit.com/";
 
 	private static Activity singleton;
 	private Toast toaster;
