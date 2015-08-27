@@ -198,6 +198,13 @@ public class MainActivity extends Activity {
 						mp.start();
 					}
 				});
+				videoView.setOnErrorListener(new MediaPlayer.OnErrorListener() {
+					@Override
+					public boolean onError(MediaPlayer mp, int what, int extra) {
+						Log.d("video", "OnErrorListener");
+						return true;
+					}
+				});
 			} else {
 				clickable = imageView;
 				imageView.setVisibility(View.VISIBLE);
