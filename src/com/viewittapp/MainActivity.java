@@ -277,7 +277,7 @@ public class MainActivity extends Activity {
 				HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 				con.setRequestMethod("GET");
 				con.setRequestProperty("User-Agent", "Mozilla/5.0");
-				con.setRequestProperty("Cookie", "over18=1");
+				con.setRequestProperty("Cookie", "over18=1; pc=4y");
 				if (con.getResponseCode() != 200)
 					throw new IOException();
 				BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
