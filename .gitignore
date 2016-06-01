@@ -1,4 +1,14 @@
-bin/
-gen/
+# generated files
+.gradle/
+.idea/
+build/
+*/build/
+local.properties
+import-summary.txt
+*.iml
+
+# osx gui files
 .DS_Store
+
+# only for project owner :)
 release.keystore

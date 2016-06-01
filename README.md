@@ -6,7 +6,5 @@ To download from the Play store, visit: www.viewittapp.com
 
 ## Build Tools
 
-Eclipse 4.2.1 and the Android SDK
-
-A migration to Android Studio is planned
-
+Android Studio 2.1.1
+Java 1.7.0_79
