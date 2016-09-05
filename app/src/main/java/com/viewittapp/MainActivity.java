@@ -184,7 +184,7 @@ public class MainActivity extends Activity {
 			if (url.endsWith("gifv")) {
 				clickable = layout;
 				videoView.setVisibility(View.VISIBLE);
-				videoView.setVideoPath(url.replace("gifv", "webm"));
+				videoView.setVideoPath(url.replace("gifv", "mp4"));
 				videoView.start();
 				videoView.setOnPreparedListener(new OnPreparedListener() {
 					@Override
@@ -501,7 +501,7 @@ public class MainActivity extends Activity {
 	/**
 	 * Data set changes must occur on the main thread and must end with a call to notifyDataSetChanged()
 	 * http://developer.android.com/reference/android/support/v4/view/PagerAdapter.html
-	 * 
+	 *
 	 * @param media
 	 * @param newLink
 	 */
