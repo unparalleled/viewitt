@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,21 +10,21 @@
         android:layout_margin="10dp"
         android:focusableInTouchMode="true"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <CheckBox
             android:id="@+id/settingsTitleCheckBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Automatically show the titles" />
+            android:text="Automatically show the titles"/>
 
         <CheckBox
             android:id="@+id/settingsVideoCheckBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Display animated gifs / videos" />
+            android:text="Display animated gifs / videos"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
             android:layout_marginTop="20dp"
             android:text="Statistics"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/settingsImagesViewed"
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="0 Images Viewed"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
 
         <TextView
             android:id="@+id/settingsMbDownloaded"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="0 MB downloaded"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
 
         <TextView
             android:id="@+id/settingsVersionTextView"
@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="version:"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
 
     </LinearLayout>
 
