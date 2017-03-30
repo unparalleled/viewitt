@@ -6,6 +6,7 @@ build/
 local.properties
 import-summary.txt
 *.iml
+*.apk
 
 # osx gui files
 .DS_Store
