@@ -2,7 +2,7 @@
 
 Welcome to the Viewitt open-source repo!
 
-To download from the Play store, visit: www.viewittapp.com
+[Download from the Play store!](https://play.google.com/store/apps/details?id=com.viewittapp)
 
 ## Build Tools
 
